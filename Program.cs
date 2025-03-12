@@ -14,6 +14,19 @@ namespace Assessment3_Q2
 
             while (numTries > 0) {
                 int number = int.Parse(Console.ReadLine());
+
+                if (number < randomNumber)
+                {
+                    Console.WriteLine("Too Low, Try Again");
+                }
+                else if (number > randomNumber)
+                {
+                    Console.WriteLine("Too High, Try Again");
+                }
+                else 
+                {
+                    Console.WriteLine("You guessed corretly!");
+                }
                 
                 
 
